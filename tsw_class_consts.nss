@@ -1,0 +1,115 @@
+//Classes
+const int CLASS_TYPE_THEURGIST = 42;
+const int CLASS_TYPE_PYROMANCER = 44;
+const int CLASS_TYPE_AEROMANCER = 45;
+const int CLASS_TYPE_GEOMANCER = 46;
+const int CLASS_TYPE_ENFORCER = 47;
+const int CLASS_TYPE_VANGUARD = 48;
+const int CLASS_TYPE_NEW_ASSIN = 49;
+const int CLASS_TYPE_TECHNICIAN = 43;
+const int CLASS_TYPE_MAVERICK = 50;
+const int CLASS_TYPE_MARKSMAN = 51;
+const int CLASS_TYPE_MYSTIC = 52;
+const int CLASS_TYPE_NECROMANCER = 53;
+const int CLASS_TYPE_DOOMSEER = 54;
+const int CLASS_TYPE_SHAMAN = 55;
+const int CLASS_TYPE_SLAYER = 56;
+const int CLASS_TYPE_CRUSADER = 57;
+const int CLASS_TYPE_CRYOMANCER = 58;
+const int CLASS_TYPE_SUMMONER = 59;
+const int CLASS_TYPE_CHAMPION = 60;
+const int CLASS_TYPE_NEW_DRUID = 61;
+const int CLASS_TYPE_BRAWLER = 62;
+const int CLASS_TYPE_ILLUSIONIST = 63;
+const int CLASS_TYPE_MARTIAL_ARTIST = 64;
+const int CLASS_TYPE_SHADOW = 65;
+const int CLASS_TYPE_BLOODMAGE = 66;
+
+//Feats
+const int FEAT_AMPLIFICATION = 1148;
+const int FEAT_GREATER_AMPLIFICATION = 1149;
+const int FEAT_EXTEND = 1150;
+const int FEAT_SECONDWIND = 1210;
+
+//Class Feats
+const int PYRO_CONFLAGRATION = 1146;
+const int PYRO_WILD_CONFLAGRATION = 1147;
+
+const int AERO_STRIKE_TWICE = 1152;
+const int AERO_RIDETHELIGHTNING = 1153;
+
+const int GEOM_CORROSION = 1156;
+const int GEOM_CALCIFY = 1157;
+
+const int ENFO_MOMENTUM = 1214;
+const int ENFO_BATTLERUSH = 1215;
+
+const int VNGD_REPRISAL = 1219;
+const int VNGD_RALLYING_REPRISAL = 1220;
+
+const int ASSN_LETHALITY = 1223;
+const int ASSN_VIRULENT = 1226;
+
+const int TECH_COORDINATION = 1228;
+const int TECH_EFFICIENCY = 1229;
+
+const int MVRK_BULLSEYE = 1232;
+const int MVRK_CONCUSSIVE_TEMPO = 1237;
+
+const int MRKS_FIRING_LINE = 1240;
+
+const int COMM_BATTLE_BROTHER = 1245;
+
+const int MYST_EXEMPLAR = 1254;
+const int MYST_AVATAR = 1255;
+const int MYST_ANNIHILATING_BOLT = 1250;
+
+const int NECR_GRAVE_MARCH = 1269;
+const int NECR_GRAVE_ARMY = 1270;
+
+const int DOOM_PROPHECY_FIRE = 1280;
+const int DOOM_PROPHECY_COLD = 1281;
+const int DOOM_PROPHECY_ELEC = 1282;
+const int DOOM_RENEWAL = 1283;
+const int DOOM_RUINATION = 1284;
+
+const int SHAM_CHANT_OF_LIFE = 1301;
+const int SHAM_CHANT_OF_DEATH = 1305;
+const int SHAM_CHANT_OF_WAR = 1303;
+
+const int CRYO_GLACIATE = 1322;
+const int CRYO_STEAL_WARMTH = 1329;
+
+const int SUMM_ANCIENT_PACT = 1334;
+const int SUMM_HARMONIOUS_ALLIANCE = 1340;
+
+const int DRUI_SEEDS_OF_GAIA = 1354;
+const int DRUI_CHILDREN_OF_GAIA = 1360;
+
+const int BRAW_BLOOD_RAGE =  1366;
+
+const int MAAR_PATH_OF_BALANCE = 1383;
+const int MAAR_PATH_OF_RUIN = 1384;
+
+const int SHAD_BITING_SHADOWS = 1392;
+const int SHAD_VEILWALK = 1395;
+
+const int BLOO_SANGUINE_SEVERITY = 1411;
+const int BLOO_BLOOD_RITUAL = 1409;
+
+//Skills
+const int TSW_SKILL_CONCENTRATION = 1;
+const int TSW_SKILL_DISCIPLINE = 3;
+const int TSW_SKILL_HEAL = 4;
+const int TSW_SKILL_HIDE = 5;
+const int TSW_SKILL_LISTEN = 6;
+const int TSW_SKILL_MOVESILENTLY = 8;
+const int TSW_SKILL_SPELLCRAFT = 16;
+const int TSW_SKILL_SPOT = 17;
+const int TSW_SKILL_TAUNT = 18;
+const int TSW_SKILL_ANIMA = 19;
+const int TSW_SKILL_STAMINA = 20;
+const int TSW_SKILL_TUMBLE = 21;
+
+//Script Constants
+//const location MAIN_SPELL_TARGET = GetSpellTargetLocation();

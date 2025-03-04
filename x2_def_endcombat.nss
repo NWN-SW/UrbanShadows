@@ -1,0 +1,17 @@
+//::///////////////////////////////////////////////
+//:: Name x2_def_endcombat
+//:: Copyright (c) 2001 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Default Combat Round End script
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith Warner
+//:: Created On: June 11/03
+//:://////////////////////////////////////////////
+
+void main()
+{
+    ExecuteScript("nw_c2_default3", OBJECT_SELF);
+    //ExecuteScript("j_ai_detercombat", OBJECT_SELF);
+}

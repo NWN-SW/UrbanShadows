@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName tsw_mnpz_lckrset
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 1
+//:://////////////////////////////////////////////
+#include "utl_i_sqlplayer"
+
+void main()
+{
+    // Set the variables
+    SQLocalsPlayer_SetInt(GetPCSpeaker(), "MINNESOTA_PUZZLE_3", 1);
+    AddJournalQuestEntry("Minnesota_Puzzle", 3, GetPCSpeaker(), FALSE);
+
+}

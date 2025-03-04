@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: Name x2_def_percept
+//:: Copyright (c) 2001 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Default On Perception script
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith Warner
+//:: Created On: June 11/03
+//:://////////////////////////////////////////////
+
+void main()
+{
+
+   //ExecuteScript("nw_c2_default2", OBJECT_SELF);
+    ExecuteScript("j_ai_onpercieve", OBJECT_SELF);
+}

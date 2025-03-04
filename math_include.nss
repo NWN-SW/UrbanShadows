@@ -1,0 +1,13 @@
+////////////////////////////////////////////////////////////////////////////////
+//:: math_include.nss
+//:: AML main include file
+//::
+//:: This file is part of "Auxiliary Math Library" project by NWShacker
+//:: Version 2.0
+////////////////////////////////////////////////////////////////////////////////
+
+
+#include "math_include_b"
+#include "math_include_l"
+#include "math_include_g"
+#include "math_include_v"

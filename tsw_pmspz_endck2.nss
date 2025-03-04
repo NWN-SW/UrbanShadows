@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName tsw_pmspz_endck2
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 1
+//:://////////////////////////////////////////////
+#include "utl_i_sqlplayer"
+
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(SQLocalsPlayer_GetInt(GetPCSpeaker(), "PARKER_PUZZLE_6") == 1))
+        return FALSE;
+
+    return TRUE;
+}

@@ -1,0 +1,15 @@
+//::///////////////////////////////////////////////
+//:: FileName tsw_mnpuz_done5
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 1
+//:://////////////////////////////////////////////
+#include "utl_i_sqlplayer"
+
+void main()
+{
+    // Set the variables
+    SQLocalsPlayer_SetInt(GetPCSpeaker(), "MINNESOTA_PUZZLE_5", 1);
+    AddJournalQuestEntry("Minnesota_Puzzle", 5, GetPCSpeaker(), FALSE);
+}

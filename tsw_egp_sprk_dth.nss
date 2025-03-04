@@ -1,0 +1,65 @@
+//::///////////////////////////////////////////////
+//:: Name x2_def_ondeath by Alexander G.
+//:://////////////////////////////////////////////
+
+#include "tsw_gold_reward"
+#include "tsw_miniboss_rep"
+
+void main()
+{
+    ExecuteScript("pc_infmagsum", OBJECT_SELF);
+
+    //Do not execute if no variable.
+    int nCheck = GetLocalInt(OBJECT_SELF, "SEAL_DESTRUCTION");
+    if(nCheck == 1)
+    {
+        ExecuteScript("tsw_sham_destdth", OBJECT_SELF);
+    }
+
+    //Make death attack deal damage to nearby enemies
+    object oPC = GetLastKiller();
+    if(GetLevelByClass(CLASS_TYPE_ASSASSIN, oPC) > 0)
+    {
+        SetLocalObject(oPC, "LAST_KILLED", OBJECT_SELF);
+        ExecuteScript("pc_deathattack", oPC);
+    }
+    object oBossSummon = GetLocalObject(OBJECT_SELF,"oSummoner");
+    if (GetIsObjectValid(oBossSummon))
+    {
+         int iBossRegen = GetLocalInt(oBossSummon,"iBossRegen");
+        SetLocalInt(oBossSummon,"iBossRegen",iBossRegen-250);
+    }
+
+
+    if(GetIsPC(oPC))
+    {
+        //Share gold
+        GivePartyGold(OBJECT_SELF, oPC);
+
+
+        //Rep for minibosses
+        MinibossReputation(oPC);
+
+        FloatingTextStringOnCreature("The demon roared and raged. Each slaying of a Spark appears to have an impact on its abilities.",OBJECT_SELF,FALSE);
+    }
+    else
+    {
+        oPC = GetFirstObjectInShape(SHAPE_SPHERE, 30.0, GetLocation(OBJECT_SELF), FALSE, OBJECT_TYPE_CREATURE);
+        while(oPC != OBJECT_INVALID)
+        {
+            if(GetIsPC(oPC))
+            {
+                //Share gold
+                GivePartyGold(OBJECT_SELF, oPC);
+
+
+                //Rep for minibosses
+                MinibossReputation(oPC);
+                break;
+            }
+            oPC = GetNextObjectInShape(SHAPE_SPHERE, 30.0, GetLocation(OBJECT_SELF), FALSE, OBJECT_TYPE_CREATURE);
+        }
+    }
+
+    ExecuteScript("nw_c2_default7", OBJECT_SELF);
+}

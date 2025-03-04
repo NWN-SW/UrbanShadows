@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName tsw_mnpz_haveid
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 1
+//:://////////////////////////////////////////////
+#include "utl_i_sqlplayer"
+
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(SQLocalsPlayer_GetInt(GetPCSpeaker(), "MINNESOTA_PUZZLE_3") != 1))
+        return FALSE;
+
+    return TRUE;
+}
